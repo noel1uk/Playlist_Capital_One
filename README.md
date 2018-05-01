@@ -17,3 +17,5 @@ npm test
 ## Approach
 * Planning: Read through starting docs at https://reactjs.org/docs/hello-world.html and experimented with components.
 
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+
