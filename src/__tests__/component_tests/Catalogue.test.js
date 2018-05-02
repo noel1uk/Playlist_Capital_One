@@ -8,5 +8,9 @@ it('renders correctly', () => {
 });
 
 it('renders catalogue headings', () => {
-  expect(catalogue.find('CatalogueHeadings').exists()).toBe(true)
+  expect(catalogue.find('CatalogueHeadings').exists()).toBe(true);
+});
+
+it('renders song details', () => {
+  expect(catalogue.find('SongDetails').exists()).toBe(true);
 });
