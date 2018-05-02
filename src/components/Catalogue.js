@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import CatalogueHeadings from './CatalogueHeadings';
 
 class Catalogue extends Component {
   render() {
     return (
-      <div></div>
+      <table>
+        <CatalogueHeadings />
+      </table>
     )
   }
 }
