@@ -10,4 +10,8 @@ it('renders correctly', () => {
 
 it('renders a YearButtonContainer component', () => {
   expect(app.find('YearButtonContainer').exists()).toBe(true);
-} )
+});
+
+it('renders a Catalogue component', () => {
+  expect(app.find('Catalogue').exists()).toBe(true);
+});
