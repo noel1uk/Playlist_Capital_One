@@ -2,6 +2,7 @@ import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import React, { Component } from 'react';
 import YearButtonContainer from './YearButtonContainer';
+import Catalogue from './Catalogue';
 Enzyme.configure({ adapter: new Adapter() });
 
 class App extends Component {
@@ -9,6 +10,7 @@ class App extends Component {
     return (
       <div>
         <YearButtonContainer />
+        <Catalogue />
       </div>
     )
   }
