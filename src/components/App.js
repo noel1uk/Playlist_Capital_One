@@ -6,10 +6,11 @@ import Catalogue from './Catalogue';
 Enzyme.configure({ adapter: new Adapter() });
 
 class App extends Component {
+
   render() {
     return (
       <div>
-        <YearButtonContainer />
+        <YearButtonContainer music={this.props.music} />
         <Catalogue />
       </div>
     )
