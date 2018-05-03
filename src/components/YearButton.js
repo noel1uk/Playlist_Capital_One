@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 
 class YearButton extends Component {
   render() {
+    const year = this.props.year
     return (
-      <button>2007</button>
+      <button>{year}</button>
     )
   }
 }

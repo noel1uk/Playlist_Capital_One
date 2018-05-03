@@ -2,10 +2,22 @@ import React, { Component } from 'react';
 import YearButton from './YearButton';
 
 class YearButtonContainer extends Component {
+  buttons = props => {
+    const buttons = [];
+    const music = props;
+    if(music !== undefined){
+      music.forEach((song) => {
+        buttons.push(<YearButton 
+          year={song.year}
+        />);
+      })
+    }
+    return buttons;
+  }
   render() {
     return (
       <div>
-        <YearButton />
+        {this.buttons(this.props.music)}
       </div>
     )
   }
