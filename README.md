@@ -47,6 +47,8 @@ The MUSIC constant is in the index.js file though it would probably be better pl
 
 I've achieved a good degree of seperation of concerns with the various components all in seperate component files in the src/components folder. 
 
+However on clicking the buttons nothing happens.
+
 ## What I've learned and what's next
 
 Need to get a much deeper understanding of what's happening in shallow test objects and my lack of understanding in this was the main stumbling block.
