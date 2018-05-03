@@ -3,16 +3,22 @@ import YearButton from './YearButton';
 
 class YearButtonContainer extends Component {
   buttons = props => {
-    const buttons = [];
+    let buttons = [];
     const music = props;
+    let uniqueYears = [];
     if(music !== undefined){
       music.forEach((song) => {
-        buttons.push(<YearButton 
-          year={song.year}
-          key={song.key}
-        />);
+        if ( uniqueYears.includes(song.year) === false ) {
+          uniqueYears.push(song.year);
+        }
       })
     }
+    uniqueYears.forEach((year) => {
+      buttons.push(<YearButton 
+        year={year}
+        />);
+    })
+
     return buttons;
   }
   render() {
