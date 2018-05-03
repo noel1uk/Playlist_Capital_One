@@ -9,6 +9,7 @@ class YearButtonContainer extends Component {
       music.forEach((song) => {
         buttons.push(<YearButton 
           year={song.year}
+          key={song.key}
         />);
       })
     }
