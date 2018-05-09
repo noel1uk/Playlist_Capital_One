@@ -6,7 +6,6 @@ import Catalogue from './Catalogue';
 Enzyme.configure({ adapter: new Adapter() });
 
 class App extends Component {
-
   render() {
     return (
       <div>
