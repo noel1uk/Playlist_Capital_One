@@ -6,8 +6,10 @@ class Catalogue extends Component {
   render() {
     return (
       <table>
+        <tbody>
         <CatalogueHeadings />
         <SongDetails />
+        </tbody>
       </table>
     )
   }
