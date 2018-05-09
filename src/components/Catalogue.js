@@ -4,6 +4,7 @@ import SongDetails from './SongDetails';
 
 class Catalogue extends Component {
   render() {
+    console.log(this)
     return (
       <table>
         <tbody>
