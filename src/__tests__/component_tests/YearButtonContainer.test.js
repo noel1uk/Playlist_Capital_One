@@ -14,6 +14,6 @@ it('renders correctly', () => {
   expect(years).toMatchSnapshot();
 });
 
-it('initializes state with an empty array of year objects', function() {
-  expect(years.state.arr).toEqual(years.state.arr);
+it('initializes state with an array of year objects', function() {
+  expect(years.state().arr).toEqual(arr);
 });
