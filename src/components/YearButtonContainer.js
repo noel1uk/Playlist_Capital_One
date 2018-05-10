@@ -17,7 +17,7 @@ class YearButtonContainer extends Component {
     return (
       <div>
         {this.state.arr.map((element, index) =>
-          <button>
+          <button key={index}>
             {element.name}
           </button>
         )}
