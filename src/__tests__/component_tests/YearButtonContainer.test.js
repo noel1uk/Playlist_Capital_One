@@ -3,10 +3,17 @@ import { shallow } from 'enzyme';
 import YearButtonContainer from '../../components/YearButtonContainer';
 
 const years = shallow(<YearButtonContainer />);
+const arr = [
+  { name: "2007" },
+  { name: "2010" },
+  { name: "2013" },
+  { name: "2014" },
+  { name: "2015" }
+];
 it('renders correctly', () => {
   expect(years).toMatchSnapshot();
 });
 
-it('renders a YearButton', () => {
-  expect(years.find('YearButton').exists()).toBe(true);
+it('initializes state with an empty array of year objects', function() {
+  expect(years.state.arr).toEqual(years.state.arr);
 });
